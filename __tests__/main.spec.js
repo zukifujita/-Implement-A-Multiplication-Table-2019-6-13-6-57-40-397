@@ -7,12 +7,17 @@ it ('should get product from two numbers', () => {
     expect(multiply(2, 4)).toBe(result);
 });
 
-it ('should get product from two numbers', () => {
+it ('left is greater than right', () => {
     let result = false;
     expect(multiply(50000, 40000)).toBe(result);
 });
 
-it ('should get product from two numbers', () => {
+it ('right is greater than left', () => {
     let result = false;
     expect(multiply(10, 5)).toBe(result);
+});
+
+it ('has a negative input', () => {
+    let result = false;
+    expect(multiply(-1, 1)).toBe(result);
 });
